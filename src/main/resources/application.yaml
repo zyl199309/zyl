@@ -1,0 +1,14 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://132.232.31.153:3306/test?useSSL=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: itoffice
+    password: itoffice
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: false
